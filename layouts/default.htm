@@ -29,23 +29,45 @@ http://www.templatemo.com/tm-486-new-event
         <div class="sk-rotating-plane"></div>
     </div>
 
-    {% partial 'template/navbar'   %}
+    {% partial 'template/navbar' %}
+    {% partial 'template/intro'  %}
 
-    {% partial 'template/intro'    %}
+{% if this.theme.settings_overview %}
     {% partial 'template/overview' %}
     {% partial 'template/detail'   %}
     {% partial 'template/video'    %}
+{% endif %}
+
+{% if this.theme.settings_speakers %}
     {% partial 'template/speakers' %}
+{% endif %}
+
+{% if this.theme.settings_program %}
     {% partial 'template/program'  %}
+{% endif %}
+
+{% if this.theme.settings_register %}
     {% partial 'template/register' %}
     {% partial 'template/faq'      %}
+{% endif %}
+
+{% if this.theme.settings_venue %}
     {% partial 'template/venue'    %}
+{% endif %}
+
+{% if this.theme.settings_sponsors %}
     {% partial 'template/sponsors' %}
-    {% partial 'template/contact'  %}
+{% endif %}
 
-    {% partial 'template/footer'   %}
+{% if this.theme.settings_contact %}
+    {% partial 'template/contact' %}
+{% endif %}
 
+    {% partial 'template/footer' %}
+
+{% if this.theme.settings_gotop %}
     <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+{% endif %}
 
     <script src="{{ [
         'assets/js/jquery.js',
