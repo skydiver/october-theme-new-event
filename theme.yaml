@@ -260,7 +260,7 @@ form:
                 tab    : Footer
                 label  : Copyright
                 type   : text
-                default: "Copyright &copy; 2016 Your Company | Design: <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a>"
+                default: Copyright &copy; 2016 Your Company | Design <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a>
             footer_facebook:
                 tab    : Footer
                 label  : Facebook
